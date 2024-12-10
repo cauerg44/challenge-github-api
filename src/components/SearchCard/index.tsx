@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './styles.css'
 
 export default function SearchCard() {
@@ -8,9 +9,9 @@ export default function SearchCard() {
                 <div className='content-search-card'>
                     <h3 className='pb20'>Encontre um perfil Github</h3>
                     <input type="text" placeholder='Usuário Github' />
-                    <div className='pt30'>
+                    <NavLink to="/search/profile" className='pt30 dblock'>
                         <button>Encontrar</button>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         </div>

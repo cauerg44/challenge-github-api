@@ -49,6 +49,10 @@
 
 /* auxiliary classes css*/
 
+.dblock {
+    display: block;
+}
+
 .pt30 {
     padding-top: 30px;
 }

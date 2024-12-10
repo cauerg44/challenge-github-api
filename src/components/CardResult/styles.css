@@ -1,0 +1,16 @@
+.github-profile-card-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.github-profile-card {
+    background-color: var(--color-bg-tertiary);
+    width: 100%;
+    height: 334px;
+
+}
+
+.mt45 {
+    margin-top: 45px;
+}

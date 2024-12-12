@@ -12,6 +12,9 @@
   --color-font-secondary: #7E7E7E;
   --color-font-tertiary: #BFBFBF;
   --color-font-quartenary: #5C5858;
+  --color-font-quinary: #1890FF;
+
+  --color-link: #0037ff;
 }
 
 * {

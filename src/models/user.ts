@@ -3,4 +3,5 @@ export type UserDTO = {
     followers: number
     login: string
     location: string
+    name: string
 }

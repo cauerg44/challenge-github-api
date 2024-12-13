@@ -1,5 +1,12 @@
-.gapi-user-notFound {
+.aux-container-not-found {
+    width: 100%;
+    max-width: 1251px;
+    margin: auto;
+}
+
+.aux-container-not-found h2 {
+    margin-top: 60px;
+    text-align: left;
     font-weight: 500;
     font-size: 38px;
-    color: var(--dsc-color-font-quinary);
 }

@@ -3,7 +3,6 @@ import './App.css'
 import Home from './routes/Home'
 import HomeBody from './routes/Home/HomeBody'
 import SearchPage from './routes/Home/SearchPage'
-import CardResult from './components/CardResult'
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
           <Route index element={<Navigate to="/home" />} />
           <Route path="home" element={<HomeBody />} />
           <Route path="search" element={<SearchPage />} >
-            <Route path="profile" element={<CardResult />} />
           </Route>
         </Route>
       </Routes>

@@ -3,6 +3,8 @@ import './App.css'
 import Home from './routes/Home'
 import HomeBody from './routes/Home/HomeBody'
 import SearchPage from './routes/Home/SearchPage'
+import GithubResultCard from './routes/Home/SubRoutes/GithubResultCard'
+import NotFound from './routes/Home/SubRoutes/NotFound'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
           <Route index element={<Navigate to="/home" />} />
           <Route path="home" element={<HomeBody />} />
           <Route path="search" element={<SearchPage />} >
+          <Route path=":user" element={<GithubResultCard />} />
+          <Route path="user/not-found" element={<NotFound />} />
           </Route>
         </Route>
       </Routes>

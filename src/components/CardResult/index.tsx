@@ -1,21 +1,17 @@
 import './styles.css'
 import { UserDTO } from '../../models/user'
 
-const user: UserDTO = {
-    avatar_url: "https://avatars.githubusercontent.com/u/128049128?v=4",
-    followers: 2,
-    login: "cauerg44",
-    location: "Salvador, Brazil",
-    name: "Cauê da Rocha Garcia"
+type Props = {
+    user: UserDTO
 }
 
-export default function CardResult() {
+export default function CardResult({ user }: Props) {
 
     return (
         <div className='github-profile-card-container github-profile-card mt45 mb45'>
             <div className='aux-container dflex'>
                 <div className='profile-photo'>
-                    <img src={user.avatar_url} alt="Profile photo" />
+                    <img src={user.avatar_url} alt={user.name} />
                 </div>
                 <div className='informations-card'>
                     <div className='informations-card-container'>
